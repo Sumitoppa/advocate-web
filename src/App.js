@@ -2,7 +2,8 @@ import './App.css';
 import NavMenu from './components/SideNav/NavMenu';
 import {useNavigate} from 'react-router-dom'
 import { useEffect } from 'react';
-import NavigationRouting from './components/NavigationRouting';
+import NavigationRouting from './components/Routing/NavigationRouting';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const navigate = useNavigate();
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <NavMenu />
       <NavigationRouting />
+      <Footer />
     </div>
   );
 }

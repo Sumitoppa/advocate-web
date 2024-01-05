@@ -13,7 +13,7 @@ function MissionAndVission() {
               <Typography className="card-title fs-4">
                 <strong>Mission</strong>
               </Typography>
-              <Typography className="card-text">
+              <Typography className="card-text fw-bold">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Typography>
@@ -28,7 +28,7 @@ function MissionAndVission() {
               <Typography className="card-title fs-4">
                 <strong>Vision</strong>
               </Typography>
-              <Typography className="card-text">
+              <Typography className="card-text fw-bold">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
               </Typography>

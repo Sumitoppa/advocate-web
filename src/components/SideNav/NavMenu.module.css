@@ -8,7 +8,7 @@
 }
 
 .advNavBackground{
-    background: rgb(164,5,14);
+    opacity: 1.0;
     background: linear-gradient(90deg, rgba(164,5,14,1) 0%, rgba(133,17,204,0.5299253490458684) 53%, rgba(82,172,244,1) 100%); 
 }
 

@@ -45,7 +45,7 @@ const Homepage = () => {
       <div className="my-3">
         <ImageSlider />
       </div>
-      <div className="my-5">
+      <div className="py-5">
         <MissionAndVision />
       </div>
     </>

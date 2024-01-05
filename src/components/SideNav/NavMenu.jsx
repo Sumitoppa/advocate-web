@@ -25,7 +25,7 @@ function NavMenu() {
 //   // eslint-disable-next-line react-hooks/exhaustive-deps
 //   }, [document.documentElement.clientWidth]);
   return (
-    <nav className={`navbar navbar-expand-lg ${styles.advNavBackground}`}>
+    <nav className={`navbar navbar-expand-lg ${styles.advNavBackground} sticky-top fw-bold`}>
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -41,7 +41,7 @@ function NavMenu() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className={`navbar-nav ${styles.advNavbar} d-flex justify-content-evenly hidden-xs`}>
             <div className="nav-item">
-              <NavLink to="/" className={`nav-link ${styles.advNavLink}`}>
+              <NavLink to="/" className={`nav-link`}>
                 <div className="d-flex">
                   <HomeTwoToneIcon /> Home
                 </div>
