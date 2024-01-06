@@ -7,7 +7,7 @@ function MissionAndVission() {
   return (
     <div className={`container d-flex gap-3 justify-content-between`}>
       <div>
-        <Zoom>
+        <Zoom triggerOnce={true}>
           <div className={`card ${styles.advMVCard}`}>
             <div className="card-body">
               <Typography className="card-title fs-4">
@@ -22,7 +22,7 @@ function MissionAndVission() {
         </Zoom>
       </div>
       <div>
-        <Zoom>
+        <Zoom triggerOnce={true}>
           <div className={`card ${styles.advMVCard}`}>
             <div className="card-body">
               <Typography className="card-title fs-4">

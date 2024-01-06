@@ -3,13 +3,14 @@
 }
 
 .advNavLink{
-    color: antiquewhite;
+    color: #1b0249 !important;
     font-weight: bold;
 }
 
 .advNavBackground{
     opacity: 1.0;
-    background: linear-gradient(90deg, rgba(164,5,14,1) 0%, rgba(133,17,204,0.5299253490458684) 53%, rgba(82,172,244,1) 100%); 
+    background: rgb(4,22,119);
+    background: linear-gradient(90deg, rgba(4,22,119,0.8) 0%, rgba(24,41,181,0.7) 50%, rgba(114,124,250,0.9949113434436274) 100%); 
 }
 
 A.advactiveNav{

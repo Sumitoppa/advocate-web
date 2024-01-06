@@ -41,35 +41,35 @@ function NavMenu() {
         <div className="collapse navbar-collapse" id="navbarNav">
           <div className={`navbar-nav ${styles.advNavbar} d-flex justify-content-evenly hidden-xs`}>
             <div className="nav-item">
-              <NavLink to="/" className={`nav-link`}>
+              <NavLink to="/" className={`nav-link ${styles.advNavLink}`}>
                 <div className="d-flex">
                   <HomeTwoToneIcon /> Home
                 </div>
               </NavLink>
             </div>
             <div className="nav-item">
-              <NavLink to="/about" className="nav-link">
+              <NavLink to="/about" className={`nav-link ${styles.advNavLink}`}>
                 <div className="d-flex">
                   <InfoTwoToneIcon /> About Sangita
                 </div>
               </NavLink>
             </div>
             <div className="nav-item">
-              <NavLink to="/area" className="nav-link">
+              <NavLink to="/area" className={`nav-link ${styles.advNavLink}`}>
                 <div className="d-flex">
                   <GavelTwoToneIcon /> Area of Work
                 </div>
               </NavLink>
             </div>
             <div className="nav-item">
-              <NavLink to="/feedback" className="nav-link">
+              <NavLink to="/feedback" className={`nav-link ${styles.advNavLink}`}>
                 <div className="d-flex">
                   <RateReviewTwoToneIcon /> Your opinion
                 </div>
               </NavLink>
             </div>
             <div className="nav-item">
-              <NavLink to="/contact" className="nav-link">
+              <NavLink to="/contact" className={`nav-link ${styles.advNavLink}`}>
                 <div className="d-flex">
                   <PermContactCalendarTwoToneIcon /> Contact
                 </div>

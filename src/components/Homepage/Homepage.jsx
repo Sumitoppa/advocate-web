@@ -14,7 +14,7 @@ const Homepage = () => {
     <>
       <div className="d-flex justify-content-between col-md-12 col-sm-12 col-12 row row-cols-auto">
         <div className="d-flex col-md-8 col-sm-12 col-12 justify-content-md-start">
-          <Slide>
+          <Slide triggerOnce={true}>
             <KPI
               count={AppConstants.ClientList}
               description={AppConstants.ClientDescription}
