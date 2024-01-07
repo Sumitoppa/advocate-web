@@ -1,15 +1,20 @@
-import React from 'react'
-import styles from './Footer.module.css';
+import React from "react";
+import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <footer>
-        <div className={`${styles.footer} p-3`}>
-            Address:
-            12 ABC Lane
+    <div className={`${styles.mt80}`}>
+      <footer className={`${styles.footer}`}>
+        <div>
+          <div className={`${styles.wave} ${styles.wave1} mt-1`}></div>
+          <div className={`${styles.wave} ${styles.wave2} mt-1`}></div>
+          <div className={`${styles.wave} ${styles.wave3} mt-1`}></div>
+          <div className={`${styles.wave} ${styles.wave4} mt-1`}></div>          
         </div>
-    </footer>
-  )
+        <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
+      </footer>
+    </div>
+  );
 }
 
-export default Footer
+export default Footer;

@@ -9,16 +9,14 @@ import styles from "./NavigationRouting.module.css";
 
 function NavigationRouting() {
   return (
-    <div className={`${styles.envelop}`}>
-      <Routes>
-        <Route path="/" exact element={<Homepage />}></Route>
-        <Route path="/about" exact element={<AboutUs />}></Route>
-        <Route path="/area" element={<AreaOfWork />}></Route>
-        <Route path="/feedback" element={<YourOpinion />}></Route>
-        <Route path="/contact" element={<Contact />}></Route>
-        <Route path="/*" element={<h2>Page not found</h2>}></Route>
-      </Routes>
-    </div>
+    <Routes>
+      <Route path="/" exact element={<Homepage />}></Route>
+      <Route path="/about" exact element={<AboutUs />}></Route>
+      <Route path="/area" element={<AreaOfWork />}></Route>
+      <Route path="/feedback" element={<YourOpinion />}></Route>
+      <Route path="/contact" element={<Contact />}></Route>
+      <Route path="/*" element={<h2>Page not found</h2>}></Route>
+    </Routes>
   );
 }
 
