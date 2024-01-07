@@ -5,7 +5,6 @@ import AboutUs from "../AboutUs/AboutUs";
 import AreaOfWork from "../AreaOfWork/AreaOfWork";
 import YourOpinion from "../YourOpinion/YourOpinion";
 import Contact from "../ContactUs/Contact";
-import styles from "./NavigationRouting.module.css";
 
 function NavigationRouting() {
   return (

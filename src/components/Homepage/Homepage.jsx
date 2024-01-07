@@ -39,7 +39,7 @@ const Homepage = () => {
           </Slide>
         </div>
         <div className="col-md-4 col-12 d-flex align-items-center">
-          <p className={`fs-2 mx-auto ${styles.advName}`}>{AppConstants.AdvocateName}</p>
+          <p className={`fs-3 mx-auto ${styles.advName}`}>{AppConstants.AdvocateName}</p>
         </div>
       </div>
       <div className="my-3">

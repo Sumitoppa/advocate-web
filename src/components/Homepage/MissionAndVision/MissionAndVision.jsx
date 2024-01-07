@@ -10,7 +10,7 @@ function MissionAndVission() {
         <Zoom triggerOnce={true}>
           <div className={`card ${styles.advMVCard}`}>
             <div className="card-body">
-              <Typography className="card-title fs-4">
+              <Typography className="card-title fs-4 text-center">
                 <strong>Mission</strong>
               </Typography>
               <Typography className="card-text fw-bold">
@@ -25,7 +25,7 @@ function MissionAndVission() {
         <Zoom triggerOnce={true}>
           <div className={`card ${styles.advMVCard}`}>
             <div className="card-body">
-              <Typography className="card-title fs-4">
+              <Typography className="card-title fs-4 text-center">
                 <strong>Vision</strong>
               </Typography>
               <Typography className="card-text fw-bold">

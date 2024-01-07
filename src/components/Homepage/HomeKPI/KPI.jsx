@@ -4,7 +4,7 @@ import styles from "../HomeKPI/KPI.module.css";
 
 function KPI(props) {
   return (
-    <div className={`card text-bg-${props.cardStyle} ${styles.advKpiCard} mx-2 my-4`}>
+    <div className={`card text-bg-${props.cardStyle} ${styles.advKpiCard} mx-2 my-4 opacity-75`}>
       <div className="card-header text-start">Total</div>
       <div className="card-body d-flex justify-content-between">
         <div className={`col-md-4 ${styles.advKpiIcon}`}>
