@@ -6,26 +6,30 @@ import GavelTwoToneIcon from "@mui/icons-material/GavelTwoTone";
 import RateReviewTwoToneIcon from "@mui/icons-material/RateReviewTwoTone";
 import PermContactCalendarTwoToneIcon from "@mui/icons-material/PermContactCalendarTwoTone";
 import styles from "../SideNav/NavMenu.module.css";
+import AppConstants from "../AdvConstants/AppConstants";
 
+const activeNavClasses = "border rounded-pill border-3 border-danger";
 function NavMenu() {
-//   React.useEffect(() => {
-//     let navLinks = document.querySelectorAll(".nav-link");
-//     if (document.documentElement.clientWidth > 992) {
-//       navLinks.forEach((link) => {
-//         link.removeAttribute("data-bs-toggle");
-//         link.removeAttribute("data-bs-target");
-//       });
-//     }
-//     else{
-//         navLinks.forEach((link) => {
-//             link.setAttribute("data-bs-toggle", "collapse");
-//             link.setAttribute("data-bs-target", "#navbarNav");
-//           });
-//     }
-//   // eslint-disable-next-line react-hooks/exhaustive-deps
-//   }, [document.documentElement.clientWidth]);
+  //   React.useEffect(() => {
+  //     let navLinks = document.querySelectorAll(".nav-link");
+  //     if (document.documentElement.clientWidth > 992) {
+  //       navLinks.forEach((link) => {
+  //         link.removeAttribute("data-bs-toggle");
+  //         link.removeAttribute("data-bs-target");
+  //       });
+  //     }
+  //     else{
+  //         navLinks.forEach((link) => {
+  //             link.setAttribute("data-bs-toggle", "collapse");
+  //             link.setAttribute("data-bs-target", "#navbarNav");
+  //           });
+  //     }
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  //   }, [document.documentElement.clientWidth]);
   return (
-    <nav className={`navbar navbar-expand-lg ${styles.advNavBackground} sticky-top fw-bold`}>
+    <nav
+      className={`navbar navbar-expand-lg ${styles.advNavBackground} sticky-top fw-bold`}
+    >
       <div className="container-fluid">
         <button
           className="navbar-toggler"
@@ -39,39 +43,77 @@ function NavMenu() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <div className={`navbar-nav ${styles.advNavbar} d-flex justify-content-evenly hidden-xs`}>
+          <div
+            className={`navbar-nav ${styles.advNavbar} d-flex justify-content-evenly hidden-xs`}
+          >
             <div className="nav-item">
-              <NavLink to="/" className={`nav-link ${styles.advNavLink}`}>
+              <NavLink
+                to={AppConstants.Home}
+                className={({ isActive }) =>
+                  isActive
+                    ? `nav-link ${styles.advNavLink} ${activeNavClasses}`
+                    : `nav-link ${styles.advNavLink}`
+                }
+              >
                 <div className="d-flex">
-                  <HomeTwoToneIcon /> Home
+                  <HomeTwoToneIcon /> {AppConstants.HomeText}
                 </div>
               </NavLink>
             </div>
             <div className="nav-item">
-              <NavLink to="/about" className={`nav-link ${styles.advNavLink}`}>
+              <NavLink
+                to={AppConstants.About}
+                className={({ isActive }) =>
+                  isActive
+                    ? `nav-link ${styles.advNavLink} ${activeNavClasses}`
+                    : `nav-link ${styles.advNavLink}`
+                }
+              >
                 <div className="d-flex">
-                  <InfoTwoToneIcon /> About Sangita
+                  <InfoTwoToneIcon /> {AppConstants.AboutText}
                 </div>
               </NavLink>
             </div>
             <div className="nav-item">
-              <NavLink to="/area" className={`nav-link ${styles.advNavLink}`}>
+              <NavLink
+                to={AppConstants.AreaOfWork}
+                className={({ isActive }) =>
+                  isActive
+                    ? `nav-link ${styles.advNavLink} ${activeNavClasses}`
+                    : `nav-link ${styles.advNavLink}`
+                }
+              >
                 <div className="d-flex">
-                  <GavelTwoToneIcon /> Area of Work
+                  <GavelTwoToneIcon /> {AppConstants.AreaOfWorkText}
                 </div>
               </NavLink>
             </div>
             <div className="nav-item">
-              <NavLink to="/feedback" className={`nav-link ${styles.advNavLink}`}>
+              <NavLink
+                to={AppConstants.Feedback}
+                className={({ isActive }) =>
+                  isActive
+                    ? `nav-link ${styles.advNavLink} ${activeNavClasses}`
+                    : `nav-link ${styles.advNavLink}`
+                }
+              >
                 <div className="d-flex">
-                  <RateReviewTwoToneIcon /> Your opinion
+                  <RateReviewTwoToneIcon /> {AppConstants.FeedbackText}
                 </div>
               </NavLink>
             </div>
             <div className="nav-item">
-              <NavLink to="/contact" className={`nav-link ${styles.advNavLink}`}>
+              <NavLink
+                to={AppConstants.ContactUs}
+                className={({ isActive }) =>
+                  isActive
+                    ? `nav-link ${styles.advNavLink} ${activeNavClasses}`
+                    : `nav-link ${styles.advNavLink}`
+                }
+              >
                 <div className="d-flex">
-                  <PermContactCalendarTwoToneIcon /> Contact
+                  <PermContactCalendarTwoToneIcon />{" "}
+                  {AppConstants.ContactUsText}
                 </div>
               </NavLink>
             </div>
