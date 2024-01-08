@@ -37,10 +37,16 @@ function Footer() {
           </div>
         </div>
         <div className="col-md-4 col-sm-6 col-12 d-flex align-items-center justify-content-center flex-column">
-          <div className="p-2 bg-opacity-10 border-info border-bottom border-5 rounded">
+          <div className="p-2 mb-3 bg-opacity-10 border-info border-bottom border-5 rounded">
             Quick Links
           </div>
-          
+          <div className="d-flex flex-column gap-2">
+            <NavLink className={styles.footerLink} to={AppConstants.Home}>{AppConstants.HomeText}</NavLink>
+            <NavLink className={styles.footerLink} to={AppConstants.About}>{AppConstants.AboutText}</NavLink>
+            <NavLink className={styles.footerLink} to={AppConstants.AreaOfWork}>{AppConstants.AreaOfWorkText}</NavLink>
+            <NavLink className={styles.footerLink} to={AppConstants.Feedback}>{AppConstants.FeedbackText}</NavLink>
+            <NavLink className={styles.footerLink} to={AppConstants.ContactUs}>{AppConstants.ContactUsText}</NavLink>
+          </div>
         </div>
       </footer>
     </div>
