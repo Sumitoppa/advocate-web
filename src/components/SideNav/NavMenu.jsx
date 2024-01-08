@@ -28,7 +28,7 @@ function NavMenu() {
   //   }, [document.documentElement.clientWidth]);
   return (
     <nav
-      className={`navbar navbar-expand-lg ${styles.advNavBackground} sticky-top fw-bold`}
+      className={`navbar navbar-expand-lg ${styles.advNavBackground} fw-bold`}
     >
       <div className="container-fluid">
         <button
