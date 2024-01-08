@@ -8,7 +8,7 @@ import PermContactCalendarTwoToneIcon from "@mui/icons-material/PermContactCalen
 import styles from "../SideNav/NavMenu.module.css";
 import AppConstants from "../AdvConstants/AppConstants";
 
-const activeNavClasses = "border rounded-pill border-3 border-danger";
+const activeNavClasses = "rounded-pill shadow bg-primary bg-gradient";
 function NavMenu() {
   //   React.useEffect(() => {
   //     let navLinks = document.querySelectorAll(".nav-link");
