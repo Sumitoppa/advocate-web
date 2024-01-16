@@ -53,6 +53,7 @@ class AppConstants {
   static FeedbackText="Your opinion";
   static ContactUsText="Contact";
   //#endregion
+  static ContactText = "Need to get legal help? Fill this form and submit. Alternatively, you can mail us directly.";
 }
 
 export default AppConstants;
