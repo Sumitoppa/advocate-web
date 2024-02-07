@@ -13,11 +13,11 @@ function Contact() {
       <div
         className={`d-flex justify-content-between container gap-2 py-5`}
       >
-        <div className="col-md-5 col-12 my-auto">
-          <div className="d-flex col-md-12 flex-column">
+        <div className="col-md-5 col-12 my-auto bg-info rounded-pill p-5">
+          <div className="col-md-12 col-12 mb-2">
             <Typography variant="h4">Contact us</Typography>
           </div>
-          <div className="col-md-12">
+          <div className="col-md-12 col-12">
             <Typography>{AppConstants.ContactText}</Typography>
           </div>
         </div>
