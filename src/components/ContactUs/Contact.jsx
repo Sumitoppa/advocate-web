@@ -27,6 +27,7 @@ function Contact() {
           <div className="col-md-12 col-12 d-flex gap-3 justify-content-between">
             <TextField
               name="firstName"
+              className={styles.advTextBox}
               required={true}
               error={isError}
               helperText={isError ? "Firstname is required" : ""}
@@ -36,6 +37,7 @@ function Contact() {
             />
             <TextField
               name="lastName"
+              className={styles.advTextBox}
               required={true}
               error={isError}
               helperText={isError ? "Lastname is required" : ""}
@@ -47,6 +49,7 @@ function Contact() {
           <div className="col-md-12 col-12">
             <TextField
               name="email"
+              className={styles.advTextBox}
               required={true}
               error={isError}
               helperText={isError ? "Your Email is required" : ""}
@@ -58,6 +61,7 @@ function Contact() {
           <div className="col-md-12 col-12">
             <TextField
               name="subject"
+              className={styles.advTextBox}
               required={true}
               error={isError}
               helperText={isError ? "Subject is required" : ""}
@@ -69,6 +73,7 @@ function Contact() {
           <div className="col-md-12 col-12">
           <TextField
               name="message"
+              className={styles.advTextBox}
               required={true}
               error={isError}
               helperText={isError ? "Message is required" : ""}
